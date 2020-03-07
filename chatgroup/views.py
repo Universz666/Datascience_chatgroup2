@@ -14,9 +14,9 @@ def index(req):
     if req.method == 'POST':
         print("POST IN")
         chat = str(req.POST['chat'])
+        print(chat)
         pred = model.predict([chat])
         label = train.target_names[pred[0]]
     return render(req, 'chatgroup/index.html' ,{
             'label':label,
-            'chat':chat,
     })
