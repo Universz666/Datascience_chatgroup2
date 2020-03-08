@@ -7,3 +7,4 @@
 * pipenv shell
 * pipenv install
 * รอออออออออออออ....................
+# Datascience_chatgroup
